@@ -1,12 +1,32 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledH1 = styled.h1`
+  color: ${(props) => props.theme.colors.planets.mercury};
+`;
+
+const StyledH4 = styled.h4`
+  color: ${(props) => props.theme.colors.neutral.darkGray};
+`;
+
+const StyledButton = styled.button`
+  background-color: ${(props) => props.theme.colors.planets.mercury};
+  border: none;
+  cursor: pointer;
+  padding: 0.1rem 5rem;
+`;
 
 function App() {
   return (
     <>
-      <h1>The Planets</h1>
-      <h4>ROTATION TIME</h4>
+      <StyledH1>The Planets</StyledH1>
+      <StyledH4>ROTATION TIME</StyledH4>
       <h2>58.6 DAYS</h2>
-      <h3>OVERVIEW</h3>
+
+      <StyledButton>
+        <h3 style={{ background: "transparent" }}>OVERVIEW</h3>
+      </StyledButton>
+
       <p>
         Mercury appears to have a solid silicate crust and mantle overlying a
         solid, iron sulfide outer core layer, a deeper liquid core layer, and a
