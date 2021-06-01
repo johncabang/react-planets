@@ -2,10 +2,12 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 
+import { planetsDatas } from "../../data";
+
 const Home = () => {
   return (
     <>
-      <Main />
+      <Main planetsDatas={planetsDatas} />
       <Footer />
     </>
   );

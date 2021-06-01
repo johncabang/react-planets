@@ -11,7 +11,7 @@ import {
   SourceLink,
 } from "./MainElements";
 
-const Main = () => {
+const Main = ({ planetsDatas }) => {
   return (
     <div
       style={{

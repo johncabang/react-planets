@@ -21,11 +21,12 @@ export const StyledFooterWrapper = styled.div`
   margin: 0;
 `;
 
-export const StyledH4 = styled.h4`
+export const Heading = styled.h4`
   color: ${(props) => props.theme.colors.neutral.darkGray};
   text-transform: uppercase;
 `;
 
 export const StyledH2 = styled.h2`
   color: ${(props) => props.theme.colors.neutral.white};
+  text-transform: uppercase;
 `;

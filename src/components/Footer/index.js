@@ -4,27 +4,27 @@ import {
   StyledFooterContainer,
   StyledFooterWrapper,
   StyledH2,
-  StyledH4,
+  Heading,
 } from "./FooterElements";
 
 const Footer = () => {
   return (
     <StyledFooterContainer>
       <StyledFooterWrapper>
-        <StyledH4>rotation time</StyledH4>
-        <StyledH2>58.6 DAYS</StyledH2>
+        <Heading>rotation time</Heading>
+        <StyledH2>58.6 days</StyledH2>
       </StyledFooterWrapper>
       <StyledFooterWrapper>
-        <StyledH4>revolution time</StyledH4>
-        <StyledH2>87.97 DAYS</StyledH2>
+        <Heading>revolution time</Heading>
+        <StyledH2>87.97 days</StyledH2>
       </StyledFooterWrapper>
       <StyledFooterWrapper>
-        <StyledH4>radius</StyledH4>
-        <StyledH2>58.6 DAYS</StyledH2>
+        <Heading>radius</Heading>
+        <StyledH2>2,439.7 km</StyledH2>
       </StyledFooterWrapper>
       <StyledFooterWrapper>
-        <StyledH4>average temp.</StyledH4>
-        <StyledH2>58.6 DAYS</StyledH2>
+        <Heading>average temp.</Heading>
+        <StyledH2>430&deg;C</StyledH2>
       </StyledFooterWrapper>
     </StyledFooterContainer>
   );
