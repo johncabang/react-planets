@@ -16,7 +16,7 @@ export const StyledButton = styled.button`
   width: 100%;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.planets.mercury};
+    background-color: ${(props) => props.theme.colors.neutral.darkGray};
     transition: ease-in 0.2s;
   }
 `;
