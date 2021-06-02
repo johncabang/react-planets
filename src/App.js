@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+
 import Home from "./pages/Home";
 
 const StyledContainer = styled.div`
@@ -9,13 +10,21 @@ const StyledContainer = styled.div`
   padding: 0 7rem;
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 100%;
 `;
 
 function App() {
+  const [planet, setPlanet] = useState("earth");
+  const [content, setContent] = useState("overview");
+
   return (
     <StyledContainer>
-      <Home />
+      <Home
+        planet={planet}
+        setPlanet={setPlanet}
+        content={content}
+        setContent={setContent}
+      />
     </StyledContainer>
   );
 }

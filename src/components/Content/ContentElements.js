@@ -1,9 +1,23 @@
 import styled from "styled-components";
 
+export const StyledContentContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+`;
+
+export const StyledImageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+`;
+
 export const StyledFactsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  margin: 5rem 0 0 0;
 `;
 
 export const Heading = styled.h1`
@@ -23,7 +37,6 @@ export const SourceWrapper = styled.div`
   align-items: center;
   margin-left: 0;
   margin-bottom: 1.5rem;
-  /* margin: 0 0 1.5rem 0; */
 `;
 
 export const SourceTitle = styled.p`

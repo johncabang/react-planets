@@ -7,26 +7,34 @@ import {
   Heading,
 } from "./FooterElements";
 
-const Footer = () => {
+const Footer = ({ planetDatas, planet }) => {
+  const data = planetDatas.filter((val) => val.name === planet);
+
   return (
-    <StyledFooterContainer>
-      <StyledFooterWrapper>
-        <Heading>rotation time</Heading>
-        <StyledH2>58.6 days</StyledH2>
-      </StyledFooterWrapper>
-      <StyledFooterWrapper>
-        <Heading>revolution time</Heading>
-        <StyledH2>87.97 days</StyledH2>
-      </StyledFooterWrapper>
-      <StyledFooterWrapper>
-        <Heading>radius</Heading>
-        <StyledH2>2,439.7 km</StyledH2>
-      </StyledFooterWrapper>
-      <StyledFooterWrapper>
-        <Heading>average temp.</Heading>
-        <StyledH2>430&deg;C</StyledH2>
-      </StyledFooterWrapper>
-    </StyledFooterContainer>
+    <>
+      {data.map((val) => {
+        return (
+          <StyledFooterContainer key={val.id}>
+            <StyledFooterWrapper>
+              <Heading>rotation time</Heading>
+              <StyledH2>{val.rotation}</StyledH2>
+            </StyledFooterWrapper>
+            <StyledFooterWrapper>
+              <Heading>revolution time</Heading>
+              <StyledH2>{val.revolution}</StyledH2>
+            </StyledFooterWrapper>
+            <StyledFooterWrapper>
+              <Heading>radius</Heading>
+              <StyledH2>{val.radius}</StyledH2>
+            </StyledFooterWrapper>
+            <StyledFooterWrapper>
+              <Heading>average temp.</Heading>
+              <StyledH2>{val.temperature}</StyledH2>
+            </StyledFooterWrapper>
+          </StyledFooterContainer>
+        );
+      })}
+    </>
   );
 };
 

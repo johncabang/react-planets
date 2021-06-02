@@ -5,7 +5,8 @@ export const StyledButtonWrapper = styled.div`
   justify-content: space-between;
   flex-direction: column;
   height: 176px;
-  width: 100%;
+  width: 350px;
+  margin-right: 0;
 `;
 
 export const StyledButton = styled.button`

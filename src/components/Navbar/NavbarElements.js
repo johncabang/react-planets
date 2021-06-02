@@ -37,4 +37,9 @@ export const StyledLI = styled.li`
 export const StyledH4 = styled.h4`
   cursor: pointer;
   color: ${(props) => props.theme.colors.neutral.lightGray};
+
+  &:hover {
+    color: ${(props) => props.theme.colors.neutral.white};
+    transition: ease-in 0.2s;
+  }
 `;

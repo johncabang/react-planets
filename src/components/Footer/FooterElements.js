@@ -4,11 +4,7 @@ export const StyledFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 5rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 7rem;
+  margin: 5rem 0;
 `;
 
 export const StyledFooterWrapper = styled.div`

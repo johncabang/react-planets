@@ -8,16 +8,18 @@ import {
   StyledUL,
 } from "./NavbarElements";
 
-const Navbar = ({ planets }) => {
+const Navbar = ({ planetDatas, setPlanet }) => {
   return (
     <StyledNavbarWrapper>
       <StyledLogo>the planets</StyledLogo>
       <StyledPlanetsWrapper>
         <StyledUL>
-          {planets.map((planet) => {
+          {planetDatas.map((planet) => {
             return (
               <StyledLI key={planet.id}>
-                <StyledH4>{planet.name}</StyledH4>
+                <StyledH4 onClick={() => setPlanet(planet.name)}>
+                  {planet.name}
+                </StyledH4>
               </StyledLI>
             );
           })}
