@@ -4,6 +4,7 @@ import Content from "../../components/Content";
 import Navbar from "../../components/Navbar";
 
 import { planetDatas } from "../../data";
+import Test from "../../components/Test";
 
 const Home = ({ planet, setPlanet, content, setContent }) => {
   return (
@@ -16,6 +17,7 @@ const Home = ({ planet, setPlanet, content, setContent }) => {
         setContent={setContent}
       />
       <Footer planetDatas={planetDatas} planet={planet} />
+      <Test />
     </>
   );
 };

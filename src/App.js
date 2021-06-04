@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { PlanetProvider } from "./context/PlanetContext";
+
 import Home from "./pages/Home";
 
 const StyledContainer = styled.div`
@@ -19,12 +21,14 @@ function App() {
 
   return (
     <StyledContainer>
-      <Home
-        planet={planet}
-        setPlanet={setPlanet}
-        content={content}
-        setContent={setContent}
-      />
+      <PlanetProvider>
+        <Home
+          planet={planet}
+          setPlanet={setPlanet}
+          content={content}
+          setContent={setContent}
+        />
+      </PlanetProvider>
     </StyledContainer>
   );
 }
