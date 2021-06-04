@@ -2,17 +2,20 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Content from "../../components/Content";
 import Navbar from "../../components/Navbar";
-import Button from "../../components/Button";
 
 import { planetDatas } from "../../data";
 
-const Home = (props) => {
+const Home = ({ planet, setPlanet, content, setContent }) => {
   return (
     <>
-      <Navbar planetDatas={planetDatas} setPlanet={props.setPlanet} />
-      <Content planetDatas={planetDatas} planet={props.planet} />
-      <Button content={props.content} setContent={props.setContent} />
-      <Footer planetDatas={planetDatas} planet={props.planet} />
+      <Navbar planetDatas={planetDatas} setPlanet={setPlanet} />
+      <Content
+        planetDatas={planetDatas}
+        planet={planet}
+        content={content}
+        setContent={setContent}
+      />
+      <Footer planetDatas={planetDatas} planet={planet} />
     </>
   );
 };

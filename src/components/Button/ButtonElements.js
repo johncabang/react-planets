@@ -15,6 +15,8 @@ export const StyledButton = styled.button`
   padding: 0.1rem 5rem;
   height: 48px;
   width: 100%;
+  /* background-color: ${({ content }) =>
+    content === "overview" ? `salmon` : `transparent`}; */
 
   &:hover {
     background-color: ${(props) => props.theme.colors.neutral.darkGray};

@@ -1,5 +1,6 @@
 import React from "react";
-// import Button from "../Button";
+import PlanetImage from "../PlanetImage";
+import Button from "../Button";
 
 import {
   StyledFactsWrapper,
@@ -21,7 +22,11 @@ const Content = ({ planetDatas, planet, content, setContent }) => {
         return (
           <StyledContentContainer key={val.id}>
             <StyledImageWrapper>
-              <img src={val.images.planet} alt={val.name} />
+              <PlanetImage
+                planetDatas={planetDatas}
+                planet={planet}
+                content={content}
+              />
             </StyledImageWrapper>
             <StyledFactsWrapper>
               <Heading>{val.name}</Heading>
@@ -37,7 +42,11 @@ const Content = ({ planetDatas, planet, content, setContent }) => {
                   />
                 </svg>
               </SourceWrapper>
-              {/* <Button setContent={setContent} /> */}
+              <Button
+                planet={planet}
+                content={content}
+                setContent={setContent}
+              />
             </StyledFactsWrapper>
           </StyledContentContainer>
         );
