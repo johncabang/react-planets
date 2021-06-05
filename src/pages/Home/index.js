@@ -3,21 +3,12 @@ import Footer from "../../components/Footer";
 import Content from "../../components/Content";
 import Navbar from "../../components/Navbar";
 
-import { planetDatas } from "../../data";
-// import Test from "../../components/Test";
-
-const Home = ({ planet, setPlanet, content, setContent }) => {
+const Home = () => {
   return (
     <>
-      <Navbar setPlanet={setPlanet} />
-      <Content
-        planetDatas={planetDatas}
-        planet={planet}
-        content={content}
-        setContent={setContent}
-      />
-      <Footer planet={planet} />
-      {/* <Test /> */}
+      <Navbar />
+      <Content />
+      <Footer />
     </>
   );
 };

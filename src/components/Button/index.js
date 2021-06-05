@@ -1,32 +1,46 @@
-import React from "react";
-import { StyledButtonWrapper, StyledButton, Label } from "./ButtonElements";
+import React, { useContext } from "react";
+import {
+  StyledButtonWrapper,
+  StyledOverviewButton,
+  StyledInternalButton,
+  StyledGeologyButton,
+  Label,
+} from "./ButtonElements";
 
-const Button = ({ planet, content, setContent }) => {
+import { PlanetContext } from "../../context/PlanetContext";
+
+const Button = () => {
+  const [planet] = useContext(PlanetContext);
+
   return (
     <StyledButtonWrapper>
-      <StyledButton
-        onClick={() => setContent("overview")}
-        content={content}
-        planet={planet}
+      <StyledOverviewButton
+        onClick={() => {
+          planet.setContent("overview");
+        }}
+        content={planet.content}
+        planet={planet.planet}
       >
-        {console.log(planet)}
-        {/* {console.log(content)} */}
         <Label>overview</Label>
-      </StyledButton>
-      <StyledButton
-        onClick={() => setContent("internal")}
-        content={content}
-        planet={planet}
+      </StyledOverviewButton>
+      <StyledInternalButton
+        onClick={() => {
+          planet.setContent("internal");
+        }}
+        content={planet.content}
+        planet={planet.planet}
       >
         <Label>internal structure</Label>
-      </StyledButton>
-      <StyledButton
-        onClick={() => setContent("geology")}
-        content={content}
-        planet={planet}
+      </StyledInternalButton>
+      <StyledGeologyButton
+        onClick={() => {
+          planet.setContent("geology");
+        }}
+        content={planet.content}
+        planet={planet.planet}
       >
         <Label>surface geology</Label>
-      </StyledButton>
+      </StyledGeologyButton>
     </StyledButtonWrapper>
   );
 };

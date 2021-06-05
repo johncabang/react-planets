@@ -2,23 +2,25 @@ import React, { useContext } from "react";
 
 import { PlanetContext } from "../../context/PlanetContext";
 
-const PlanetImage = ({ planet, content, setContent }) => {
+const PlanetImage = () => {
   const [planets] = useContext(PlanetContext);
 
-  const data = planets.planetDatas.filter((val) => val.name === planet);
+  const data = planets.planets.planetDatas.filter(
+    (val) => val.name === planets.planet
+  );
 
   return (
     <>
       {data.map((val) => {
         return (
           <div key={val.id}>
-            {content === "overview" && (
+            {planets.content === "overview" && (
               <img src={val.images.planet} alt={val.name} />
             )}
-            {content === "internal" && (
+            {planets.content === "internal" && (
               <img src={val.images.internal} alt={val.name} />
             )}
-            {content === "geology" && (
+            {planets.content === "geology" && (
               <img src={val.images.geology} alt={val.name} />
             )}
           </div>

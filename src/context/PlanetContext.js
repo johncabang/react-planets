@@ -5,11 +5,20 @@ export const PlanetContext = createContext();
 
 export const PlanetProvider = (props) => {
   const [planets, setPlanets] = useState({ planetDatas });
-  // const [planet, setPlanet] = useState("earth");
-  // const [content, setContent] = useState("overview");
+  const [planet, setPlanet] = useState("Earth");
+  const [content, setContent] = useState("overview");
+
+  const value = {
+    planets,
+    setPlanets,
+    planet,
+    setPlanet,
+    content,
+    setContent,
+  };
 
   return (
-    <PlanetContext.Provider value={[planets, setPlanets]}>
+    <PlanetContext.Provider value={[value]}>
       {props.children}
     </PlanetContext.Provider>
   );

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import PlanetImage from "../PlanetImage";
 import Button from "../Button";
+
+import { PlanetContext } from "../../context/PlanetContext";
 
 import {
   StyledFactsWrapper,
@@ -13,30 +15,29 @@ import {
   StyledContentContainer,
 } from "./ContentElements";
 
-const Content = ({ planetDatas, planet, content, setContent }) => {
-  const data = planetDatas.filter((val) => val.name === planet);
+const Content = () => {
+  const [planets] = useContext(PlanetContext);
+
+  const data = planets.planets.planetDatas.filter(
+    (val) => val.name === planets.planet
+  );
   return (
     <>
-      {/* {console.log(data[0])} */}
       {data.map((val) => {
         return (
           <StyledContentContainer key={val.id}>
             <StyledImageWrapper>
-              <PlanetImage
-                planetDatas={planetDatas}
-                planet={planet}
-                content={content}
-              />
+              <PlanetImage />
             </StyledImageWrapper>
             <StyledFactsWrapper>
               <Heading>{val.name}</Heading>
-              {content === "overview" && (
+              {planets.content === "overview" && (
                 <StyledFactsBody>{val.overview.content}</StyledFactsBody>
               )}
-              {content === "internal" && (
+              {planets.content === "internal" && (
                 <StyledFactsBody>{val.structure.content}</StyledFactsBody>
               )}
-              {content === "geology" && (
+              {planets.content === "geology" && (
                 <StyledFactsBody>{val.geology.content}</StyledFactsBody>
               )}
               <SourceWrapper>
@@ -50,11 +51,7 @@ const Content = ({ planetDatas, planet, content, setContent }) => {
                   />
                 </svg>
               </SourceWrapper>
-              <Button
-                planet={planet}
-                content={content}
-                setContent={setContent}
-              />
+              <Button />
             </StyledFactsWrapper>
           </StyledContentContainer>
         );

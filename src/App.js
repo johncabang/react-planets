@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { PlanetProvider } from "./context/PlanetContext";
@@ -16,18 +16,10 @@ const StyledContainer = styled.div`
 `;
 
 function App() {
-  const [planet, setPlanet] = useState("earth");
-  const [content, setContent] = useState("overview");
-
   return (
     <StyledContainer>
       <PlanetProvider>
-        <Home
-          planet={planet}
-          setPlanet={setPlanet}
-          content={content}
-          setContent={setContent}
-        />
+        <Home />
       </PlanetProvider>
     </StyledContainer>
   );
