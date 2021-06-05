@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import {
   StyledFooterContainer,
@@ -7,8 +7,12 @@ import {
   Heading,
 } from "./FooterElements";
 
-const Footer = ({ planetDatas, planet }) => {
-  const data = planetDatas.filter((val) => val.name === planet);
+import { PlanetContext } from "../../context/PlanetContext";
+
+const Footer = ({ planet }) => {
+  const [planets] = useContext(PlanetContext);
+
+  const data = planets.planetDatas.filter((val) => val.name === planet);
 
   return (
     <>

@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { PlanetContext } from "../context/PlanetContext";
 
 const Test = () => {
-  const [planets, setPlanets] = useContext(PlanetContext);
+  const [planets] = useContext(PlanetContext);
 
   return (
     <>
-      {planets.planetDatas.map((val) => (
-        <div>{val.name}</div>
-      ))}
       {/* {console.log(planets.planetDatas)} */}
+      {planets.planetDatas.map((val) => (
+        <div key={val.id}>{val.name}</div>
+      ))}
     </>
   );
 };

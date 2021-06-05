@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   StyledH4,
   StyledLI,
@@ -8,13 +8,17 @@ import {
   StyledUL,
 } from "./NavbarElements";
 
-const Navbar = ({ planetDatas, setPlanet }) => {
+import { PlanetContext } from "../../context/PlanetContext";
+
+const Navbar = ({ setPlanet }) => {
+  const [planets, setPlanets] = useContext(PlanetContext);
+
   return (
     <StyledNavbarWrapper>
       <StyledLogo>the planets</StyledLogo>
       <StyledPlanetsWrapper>
         <StyledUL>
-          {planetDatas.map((planet) => {
+          {planets.planetDatas.map((planet) => {
             return (
               <StyledLI key={planet.id}>
                 <StyledH4 onClick={() => setPlanet(planet.name)}>

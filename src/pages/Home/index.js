@@ -4,20 +4,20 @@ import Content from "../../components/Content";
 import Navbar from "../../components/Navbar";
 
 import { planetDatas } from "../../data";
-import Test from "../../components/Test";
+// import Test from "../../components/Test";
 
 const Home = ({ planet, setPlanet, content, setContent }) => {
   return (
     <>
-      <Navbar planetDatas={planetDatas} setPlanet={setPlanet} />
+      <Navbar setPlanet={setPlanet} />
       <Content
         planetDatas={planetDatas}
         planet={planet}
         content={content}
         setContent={setContent}
       />
-      <Footer planetDatas={planetDatas} planet={planet} />
-      <Test />
+      <Footer planet={planet} />
+      {/* <Test /> */}
     </>
   );
 };

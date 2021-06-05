@@ -30,7 +30,15 @@ const Content = ({ planetDatas, planet, content, setContent }) => {
             </StyledImageWrapper>
             <StyledFactsWrapper>
               <Heading>{val.name}</Heading>
-              <StyledFactsBody>{val.overview.content}</StyledFactsBody>
+              {content === "overview" && (
+                <StyledFactsBody>{val.overview.content}</StyledFactsBody>
+              )}
+              {content === "internal" && (
+                <StyledFactsBody>{val.structure.content}</StyledFactsBody>
+              )}
+              {content === "geology" && (
+                <StyledFactsBody>{val.geology.content}</StyledFactsBody>
+              )}
               <SourceWrapper>
                 <SourceTitle>Source:</SourceTitle>
                 <SourceLink>Wikipedia</SourceLink>
