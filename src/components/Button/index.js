@@ -10,34 +10,35 @@ import {
 import { PlanetContext } from "../../context/PlanetContext";
 
 const Button = () => {
-  const [planet] = useContext(PlanetContext);
+  const [{ planet, content, setContent }] = useContext(PlanetContext);
 
   return (
     <StyledButtonWrapper>
       <StyledOverviewButton
         onClick={() => {
-          planet.setContent("overview");
+          setContent("overview");
         }}
-        content={planet.content}
-        planet={planet.planet}
+        content={content}
+        planet={planet}
       >
+        {/* {console.log(planet.planets.planetDatas)} */}
         <Label>overview</Label>
       </StyledOverviewButton>
       <StyledInternalButton
         onClick={() => {
-          planet.setContent("internal");
+          setContent("internal");
         }}
-        content={planet.content}
-        planet={planet.planet}
+        content={content}
+        planet={planet}
       >
         <Label>internal structure</Label>
       </StyledInternalButton>
       <StyledGeologyButton
         onClick={() => {
-          planet.setContent("geology");
+          setContent("geology");
         }}
-        content={planet.content}
-        planet={planet.planet}
+        content={content}
+        planet={planet}
       >
         <Label>surface geology</Label>
       </StyledGeologyButton>

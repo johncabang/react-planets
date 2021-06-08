@@ -44,7 +44,7 @@ export const SourceTitle = styled.p`
   margin-right: 0.8rem;
 `;
 
-export const SourceLink = styled.p`
+export const SourceLink = styled.a`
   color: ${(props) => props.theme.colors.neutral.lightGray};
   margin-right: 0.8rem;
 `;

@@ -53,6 +53,7 @@ export const planetDatas = [
       internal: mercuryInternal,
       geology: mercuryGeology,
     },
+    color: "#419EBB",
   },
   {
     id: "2",
@@ -81,6 +82,7 @@ export const planetDatas = [
       internal: venusInternal,
       geology: venusGeology,
     },
+    color: "#EDA249",
   },
   {
     id: "3",
@@ -109,6 +111,7 @@ export const planetDatas = [
       internal: earthInternal,
       geology: earthGeology,
     },
+    color: "#6f2ed6",
   },
   {
     id: "4",
@@ -137,6 +140,7 @@ export const planetDatas = [
       internal: marsInternal,
       geology: marsGeology,
     },
+    color: "#D14C32",
   },
   {
     id: "5",
@@ -166,6 +170,7 @@ export const planetDatas = [
       internal: jupiterInternal,
       geology: jupiterGeology,
     },
+    color: "#D83A34",
   },
   {
     id: "6",
@@ -194,6 +199,7 @@ export const planetDatas = [
       internal: saturnInternal,
       geology: saturnGeology,
     },
+    color: "#CD5120",
   },
   {
     id: "7",
@@ -222,6 +228,7 @@ export const planetDatas = [
       internal: uranusInternal,
       geology: uranusGeology,
     },
+    color: "#1ec2a4",
   },
   {
     id: "8",
@@ -250,5 +257,6 @@ export const planetDatas = [
       internal: neptuneInternal,
       geology: neptuneGeology,
     },
+    color: "#2d68f0",
   },
 ];

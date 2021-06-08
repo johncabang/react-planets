@@ -10,11 +10,9 @@ import {
 import { PlanetContext } from "../../context/PlanetContext";
 
 const Footer = () => {
-  const [planets] = useContext(PlanetContext);
+  const [{ planets, planet }] = useContext(PlanetContext);
 
-  const data = planets.planets.planetDatas.filter(
-    (val) => val.name === planets.planet
-  );
+  const data = planets.planetDatas.filter((val) => val.name === planet);
 
   return (
     <>

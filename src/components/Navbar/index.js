@@ -11,17 +11,17 @@ import {
 import { PlanetContext } from "../../context/PlanetContext";
 
 const Navbar = () => {
-  const [planets] = useContext(PlanetContext);
+  const [{ planets, setPlanet }] = useContext(PlanetContext);
 
   return (
     <StyledNavbarWrapper>
       <StyledLogo>the planets</StyledLogo>
       <StyledPlanetsWrapper>
         <StyledUL>
-          {planets.planets.planetDatas.map((val) => {
+          {planets.planetDatas.map((val) => {
             return (
               <StyledLI key={val.id}>
-                <StyledH4 onClick={() => planets.setPlanet(val.name)}>
+                <StyledH4 onClick={() => setPlanet(val.name)}>
                   {val.name}
                 </StyledH4>
               </StyledLI>

@@ -11,6 +11,13 @@ const GlobalStyles = createGlobalStyle`
   margin: 0 auto;
 }
 
+a {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: 'Spartan', sans-serif;
+}
+
+
 p {
   font-size: 14px;
   line-height: 25px;

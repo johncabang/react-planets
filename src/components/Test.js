@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { PlanetContext } from "../context/PlanetContext";
 
 const Test = () => {
-  const [planets] = useContext(PlanetContext);
+  const [{ planets }] = useContext(PlanetContext);
 
   return (
     <>
