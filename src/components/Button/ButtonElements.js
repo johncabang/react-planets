@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledButtonWrapper = styled.div`
   display: flex;
@@ -15,8 +15,13 @@ export const StyledOverviewButton = styled.button`
   padding: 0.1rem 5rem;
   height: 48px;
   width: 100%;
+
   background-color: ${({ content }) =>
-    content === "overview" ? "salmon" : "transparent"};
+    content === "overview"
+      ? css`
+          ${(props) => props.color}
+        `
+      : "transparent"};
 
   &:hover {
     background-color: ${(props) => props.theme.colors.neutral.darkGray};
@@ -30,8 +35,13 @@ export const StyledInternalButton = styled.button`
   padding: 0.1rem 5rem;
   height: 48px;
   width: 100%;
+
   background-color: ${({ content }) =>
-    content === "internal" ? "pink" : "transparent"};
+    content === "internal"
+      ? css`
+          ${(props) => props.color}
+        `
+      : "transparent"};
 
   &:hover {
     background-color: ${(props) => props.theme.colors.neutral.darkGray};
@@ -45,8 +55,13 @@ export const StyledGeologyButton = styled.button`
   padding: 0.1rem 5rem;
   height: 48px;
   width: 100%;
+
   background-color: ${({ content }) =>
-    content === "geology" ? "aqua" : "transparent"};
+    content === "geology"
+      ? css`
+          ${(props) => props.color}
+        `
+      : "transparent"};
 
   &:hover {
     background-color: ${(props) => props.theme.colors.neutral.darkGray};

@@ -67,7 +67,7 @@ const Content = () => {
                   </SourceWrapper>
                 </>
               )}
-              <Button />
+              <Button color={val.color} />
             </StyledFactsWrapper>
           </StyledContentContainer>
         );
