@@ -14,8 +14,9 @@ const StyledContainer = styled.div`
   position: relative;
   height: 100%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: 0;
+    transition: 0.8s all ease;
   }
 `;
 

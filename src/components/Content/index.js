@@ -6,12 +6,13 @@ import { PlanetContext } from "../../context/PlanetContext";
 
 import {
   StyledFactsWrapper,
+  StyledImageWrapper,
+  StyledFactsContainer,
   Heading,
   StyledFactsBody,
   SourceWrapper,
   SourceTitle,
   SourceLink,
-  StyledImageWrapper,
   StyledContentContainer,
 } from "./ContentElements";
 
@@ -29,10 +30,10 @@ const Content = () => {
             <StyledImageWrapper>
               <PlanetImage />
             </StyledImageWrapper>
-            <StyledFactsWrapper>
-              <Heading>{val.name}</Heading>
+            <StyledFactsContainer>
               {content === "overview" && (
-                <>
+                <StyledFactsWrapper>
+                  <Heading>{val.name}</Heading>
                   <StyledFactsBody>{val.overview.content}</StyledFactsBody>
                   <SourceWrapper>
                     <SourceTitle>Source:</SourceTitle>
@@ -41,10 +42,11 @@ const Content = () => {
                     </SourceLink>
                     <img src={svg} alt="wiki source" />
                   </SourceWrapper>
-                </>
+                </StyledFactsWrapper>
               )}
               {content === "internal" && (
-                <>
+                <StyledFactsWrapper>
+                  <Heading>{val.name}</Heading>
                   <StyledFactsBody>{val.structure.content}</StyledFactsBody>
                   <SourceWrapper>
                     <SourceTitle>Source:</SourceTitle>
@@ -53,10 +55,11 @@ const Content = () => {
                     </SourceLink>
                     <img src={svg} alt="wiki source" />
                   </SourceWrapper>
-                </>
+                </StyledFactsWrapper>
               )}
               {content === "geology" && (
-                <>
+                <StyledFactsWrapper>
+                  <Heading>{val.name}</Heading>
                   <StyledFactsBody>{val.geology.content}</StyledFactsBody>
                   <SourceWrapper>
                     <SourceTitle>Source:</SourceTitle>
@@ -65,10 +68,10 @@ const Content = () => {
                     </SourceLink>
                     <img src={svg} alt="wiki source" />
                   </SourceWrapper>
-                </>
+                </StyledFactsWrapper>
               )}
               <Button color={val.color} />
-            </StyledFactsWrapper>
+            </StyledFactsContainer>
           </StyledContentContainer>
         );
       })}

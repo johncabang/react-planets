@@ -8,10 +8,11 @@ export const StyledNavbarWrapper = styled.div`
   align-items: center;
   border-bottom: 2px solid ${(props) => props.theme.colors.neutral.darkGray};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: 140px;
     flex-direction: column;
     justify-content: space-around;
+    transition: 0.8s all ease;
   }
 `;
 
@@ -23,9 +24,10 @@ export const StyledLogo = styled.div`
   width: 100%;
   padding-left: 2rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding-left: 0;
     width: auto;
+    transition: 0.8s all ease;
   }
 `;
 
@@ -33,10 +35,11 @@ export const StyledPlanetsWrapper = styled.div`
   display: flex;
   padding-right: 2rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: 0;
     justify-content: space-between;
     width: 100%;
+    transition: 0.8s all ease;
   }
 `;
 
@@ -50,8 +53,9 @@ export const StyledLI = styled.li`
   padding-left: 1.8rem;
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: 0;
+    transition: 0.8s all ease;
   }
 `;
 
