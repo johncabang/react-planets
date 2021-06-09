@@ -13,6 +13,10 @@ const StyledContainer = styled.div`
   width: 100%;
   position: relative;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 function App() {

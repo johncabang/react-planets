@@ -5,6 +5,7 @@ export const StyledContentContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  margin-top: 2rem;
 `;
 
 export const StyledImageWrapper = styled.div`
