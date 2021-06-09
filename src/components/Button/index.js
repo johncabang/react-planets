@@ -12,6 +12,8 @@ import { PlanetContext } from "../../context/PlanetContext";
 const Button = ({ color }) => {
   const [{ content, setContent }] = useContext(PlanetContext);
 
+  // TODOS - FIX DYNAMIC LABELS
+
   return (
     <StyledButtonWrapper>
       <StyledOverviewButton
@@ -32,7 +34,9 @@ const Button = ({ color }) => {
         content={content}
         color={color}
       >
-        <Label>internal structure</Label>
+        <Label>
+          {window.innerWidth <= 500 ? "structure" : "internal structure"}
+        </Label>
       </StyledInternalButton>
       <StyledGeologyButton
         onClick={() => {
@@ -41,7 +45,9 @@ const Button = ({ color }) => {
         content={content}
         color={color}
       >
-        <Label>surface geology</Label>
+        <Label>
+          {window.innerWidth <= 500 ? "surface" : "surface geology"}
+        </Label>
       </StyledGeologyButton>
     </StyledButtonWrapper>
   );

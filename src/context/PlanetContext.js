@@ -7,6 +7,11 @@ export const PlanetProvider = (props) => {
   const [planets, setPlanets] = useState({ planetDatas });
   const [planet, setPlanet] = useState("Earth");
   const [content, setContent] = useState("overview");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   const value = {
     planets,
@@ -15,6 +20,9 @@ export const PlanetProvider = (props) => {
     setPlanet,
     content,
     setContent,
+    isOpen,
+    setIsOpen,
+    toggle,
   };
 
   return (

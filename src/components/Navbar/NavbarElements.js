@@ -14,6 +14,10 @@ export const StyledNavbarWrapper = styled.div`
     justify-content: space-around;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 500px) {
+    height: 80px;
+  }
 `;
 
 export const StyledLogo = styled.div`
@@ -46,6 +50,10 @@ export const StyledPlanetsWrapper = styled.div`
 export const StyledUL = styled.ul`
   width: 100%;
   display: flex;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const StyledLI = styled.li`

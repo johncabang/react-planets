@@ -12,6 +12,16 @@ export const StyledButtonWrapper = styled.div`
     width: 281px;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80px;
+
+    border-bottom: 2px solid ${(props) => props.theme.colors.neutral.darkGray};
+  }
 `;
 
 export const StyledOverviewButton = styled.button`
@@ -36,6 +46,17 @@ export const StyledOverviewButton = styled.button`
   @media screen and (max-width: 1024px) {
     padding: 0;
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 500px) {
+    border: none;
+    background-color: transparent;
+    ${({ content }) =>
+      content === "overview"
+        ? css`
+            border-bottom: 4px solid ${(props) => props.color};
+          `
+        : "transparent"};
   }
 `;
 
@@ -62,6 +83,17 @@ export const StyledInternalButton = styled.button`
     padding: 0;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 500px) {
+    border: none;
+    background-color: transparent;
+    ${({ content }) =>
+      content === "internal"
+        ? css`
+            border-bottom: 4px solid ${(props) => props.color};
+          `
+        : "transparent"};
+  }
 `;
 
 export const StyledGeologyButton = styled.button`
@@ -86,6 +118,17 @@ export const StyledGeologyButton = styled.button`
   @media screen and (max-width: 1024px) {
     padding: 0;
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 500px) {
+    border: none;
+    background-color: transparent;
+    ${({ content }) =>
+      content === "geology"
+        ? css`
+            border-bottom: 4px solid ${(props) => props.color};
+          `
+        : "transparent"};
   }
 `;
 
