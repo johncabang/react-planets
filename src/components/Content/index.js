@@ -54,7 +54,7 @@ const Content = () => {
                     <SourceLink href={val.structure.source} target="_blank">
                       Wikipedia
                     </SourceLink>
-                    <img src={svg} alt="wiki source" />
+                    <SourceImage src={svg} alt="wiki source" />
                   </SourceWrapper>
                 </StyledFactsWrapper>
               )}
@@ -67,7 +67,7 @@ const Content = () => {
                     <SourceLink href={val.geology.source} target="_blank">
                       Wikipedia
                     </SourceLink>
-                    <img src={svg} alt="wiki source" />
+                    <SourceImage src={svg} alt="wiki source" />
                   </SourceWrapper>
                 </StyledFactsWrapper>
               )}
