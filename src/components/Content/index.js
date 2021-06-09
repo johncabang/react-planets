@@ -13,6 +13,7 @@ import {
   SourceWrapper,
   SourceTitle,
   SourceLink,
+  SourceImage,
   StyledContentContainer,
 } from "./ContentElements";
 
@@ -40,7 +41,7 @@ const Content = () => {
                     <SourceLink href={val.overview.source} target="_blank">
                       Wikipedia
                     </SourceLink>
-                    <img src={svg} alt="wiki source" />
+                    <SourceImage src={svg} alt="wiki source" />
                   </SourceWrapper>
                 </StyledFactsWrapper>
               )}

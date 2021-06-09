@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 
 import { PlanetContext } from "../../context/PlanetContext";
+import { Image } from "./PlanetImageElements";
 
 const PlanetImage = () => {
   const [planets] = useContext(PlanetContext);
@@ -15,13 +16,13 @@ const PlanetImage = () => {
         return (
           <div key={val.id}>
             {planets.content === "overview" && (
-              <img src={val.images.planet} alt={val.name} />
+              <Image src={val.images.planet} alt={val.name} />
             )}
             {planets.content === "internal" && (
-              <img src={val.images.internal} alt={val.name} />
+              <Image src={val.images.internal} alt={val.name} />
             )}
             {planets.content === "geology" && (
-              <img src={val.images.geology} alt={val.name} />
+              <Image src={val.images.geology} alt={val.name} />
             )}
           </div>
         );

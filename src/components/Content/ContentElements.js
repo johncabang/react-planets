@@ -36,6 +36,11 @@ export const StyledFactsContainer = styled.div`
     justify-content: space-between;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const StyledFactsWrapper = styled.div`
@@ -46,6 +51,11 @@ export const StyledFactsWrapper = styled.div`
   @media screen and (max-width: 1024px) {
     margin: 0;
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    justify-content: center;
   }
 `;
 
@@ -60,6 +70,8 @@ export const Heading = styled.h1`
   }
 
   @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
     font-size: 40px;
   }
 `;
@@ -73,6 +85,12 @@ export const StyledFactsBody = styled.p`
     font-size: 11px;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 500px) {
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const SourceWrapper = styled.div`
@@ -80,6 +98,11 @@ export const SourceWrapper = styled.div`
   align-items: center;
   margin-left: 0;
   margin-bottom: 1.5rem;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 export const SourceTitle = styled.p`
@@ -89,6 +112,10 @@ export const SourceTitle = styled.p`
   @media screen and (max-width: 1024px) {
     font-size: 12px;
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 0 0.3rem;
   }
 `;
 
@@ -100,4 +127,12 @@ export const SourceLink = styled.a`
     font-size: 12px;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 500px) {
+    margin: 0 0.3rem;
+  }
+`;
+
+export const SourceImage = styled.img`
+  margin: 0 0.3rem;
 `;
