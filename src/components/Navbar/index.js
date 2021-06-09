@@ -6,16 +6,22 @@ import {
   StyledNavbarWrapper,
   StyledPlanetsWrapper,
   StyledUL,
+  MobileIcon,
 } from "./NavbarElements";
+
+import hamburger from "../../assets/icon-hamburger.svg";
 
 import { PlanetContext } from "../../context/PlanetContext";
 
 const Navbar = () => {
-  const [{ planets, setPlanet }] = useContext(PlanetContext);
+  const [{ planets, setPlanet, isOpen, toggle }] = useContext(PlanetContext);
 
   return (
     <StyledNavbarWrapper>
       <StyledLogo>the planets</StyledLogo>
+      <MobileIcon onClick={toggle}>
+        {!isOpen && <img src={hamburger} alt="hamburger" />}
+      </MobileIcon>
       <StyledPlanetsWrapper>
         <StyledUL>
           {planets.planetDatas.map((val) => {

@@ -10,7 +10,7 @@ export const PlanetProvider = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-    setIsOpen(!isOpen);
+    // setIsOpen(!isOpen);
   };
 
   const value = {
