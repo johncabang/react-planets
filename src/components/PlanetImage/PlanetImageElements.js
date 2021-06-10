@@ -5,7 +5,6 @@ export const Image = styled.img`
     display: flex;
     justify-content: center;
     width: 75%;
-    transition: 0.8s all ease;
   }
 
   @media screen and (max-width: 500px) {
