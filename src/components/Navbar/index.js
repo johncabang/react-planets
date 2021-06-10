@@ -14,13 +14,13 @@ import hamburger from "../../assets/icon-hamburger.svg";
 import { PlanetContext } from "../../context/PlanetContext";
 
 const Navbar = () => {
-  const [{ planets, setPlanet, isOpen, toggle }] = useContext(PlanetContext);
+  const [{ planets, setPlanet, toggle }] = useContext(PlanetContext);
 
   return (
     <StyledNavbarWrapper>
       <StyledLogo>the planets</StyledLogo>
       <MobileIcon onClick={toggle}>
-        {!isOpen && <img src={hamburger} alt="hamburger" />}
+        <img src={hamburger} alt="hamburger" />
       </MobileIcon>
       <StyledPlanetsWrapper>
         <StyledUL>
