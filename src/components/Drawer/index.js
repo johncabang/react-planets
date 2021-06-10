@@ -6,6 +6,7 @@ import {
   DrawerLI,
   DrawerPlanets,
   DrawerPlanetColor,
+  DrawerSvgWrapper,
 } from "./DrawerElements";
 
 import { PlanetContext } from "../../context/PlanetContext";
@@ -23,7 +24,7 @@ const Drawer = () => {
                 <DrawerPlanets onClick={() => setPlanet(val.name)}>
                   <DrawerPlanetColor planetColor={val.color} />
                   {val.name}
-                  <div style={{ margin: "0" }}>
+                  <DrawerSvgWrapper>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="6"
@@ -36,7 +37,7 @@ const Drawer = () => {
                         d="M1 0l4 4-4 4"
                       />
                     </svg>
-                  </div>
+                  </DrawerSvgWrapper>
                 </DrawerPlanets>
               </DrawerLI>
             );

@@ -53,3 +53,7 @@ export const DrawerPlanetColor = styled.div`
   border-radius: 50%;
   margin: 0;
 `;
+
+export const DrawerSvgWrapper = styled.div`
+  margin: 0;
+`;
