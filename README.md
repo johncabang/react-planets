@@ -1,5 +1,7 @@
 ## Planets - Fact Site <!-- omit in toc -->
 
+!["react-planets - desktop"](https://github.com/johncabang/react-planets/blob/main/docs/react-planets-desktop-001.gif?raw=true)
+
 ## Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
@@ -28,4 +30,15 @@ Users should be able to:
 
 ### Preview
 
-![Design preview](./docs/preview.jpg)
+Desktop
+
+!["react-planets - desktop"](https://github.com/johncabang/react-planets/blob/main/docs/react-planets-desktop-001.png?raw=true)
+
+Tablet
+
+<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-001.png?raw=true" height="550"></center> 
+<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-002.png?raw=true" height="550"></center>
+
+Mobile
+
+<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-mobile-002.gif?raw=true" height="600"></center>
