@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import backgroundStars from "../assets/background-stars.svg";
+
 const GlobalStyles = createGlobalStyle`
 
 * {
@@ -6,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
   padding: 0;
   color: #ffffff;
+  background-image: url(${backgroundStars});
   background-color: #070724;
   max-width: 1440px;
   margin: 0 auto;

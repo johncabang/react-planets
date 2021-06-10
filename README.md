@@ -1,6 +1,6 @@
 ## Planets - Fact Site <!-- omit in toc -->
 
-!["react-planets - desktop"](https://github.com/johncabang/react-planets/blob/main/docs/react-planets-desktop-001.gif?raw=true)
+!["react-planets - desktop"](https://github.com/johncabang/react-planets/blob/main/docs/react-planets-desktop-002.gif?raw=true)
 
 ## Table of contents <!-- omit in toc -->
 
@@ -26,6 +26,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+  - Context API
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### Preview
