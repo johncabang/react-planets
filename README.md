@@ -33,12 +33,12 @@ Users should be able to:
 
 Desktop
 
-!["react-planets - desktop"](https://github.com/johncabang/react-planets/blob/main/docs/react-planets-desktop-001.png?raw=true)
+!["react-planets - desktop"](https://github.com/johncabang/react-planets/blob/main/docs/react-planets-desktop-002.png?raw=true)
 
 Tablet
 
-<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-001.png?raw=true" height="550"></center> 
-<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-002.png?raw=true" height="550"></center>
+<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-003.png?raw=true" height="550"></center> 
+<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-004.png?raw=true" height="550"></center>
 
 Mobile
 
