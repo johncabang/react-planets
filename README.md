@@ -37,9 +37,8 @@ Desktop
 
 Tablet
 
-<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-003.png?raw=true" height="550"></center> 
-<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-004.png?raw=true" height="550"></center>
+<img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-tablet-004.png?raw=true" height="550">
 
 Mobile
 
-<center><img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-mobile-002.gif?raw=true" height="600"></center>
+<img src="https://github.com/johncabang/react-planets/blob/main/docs/react-planets-mobile-002.gif?raw=true" height="600">
