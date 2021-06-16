@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const StyledContentContainer = styled.div`
   display: flex;
@@ -76,7 +77,7 @@ export const Heading = styled.h1`
   }
 `;
 
-export const StyledFactsBody = styled.p`
+export const StyledFactsBody = styled(motion.p)`
   color: ${(props) => props.theme.colors.neutral.lightGray};
   width: 350px;
   margin: 0 0 1.5rem 0;

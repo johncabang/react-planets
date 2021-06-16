@@ -35,7 +35,14 @@ const Content = () => {
               {content === "overview" && (
                 <StyledFactsWrapper>
                   <Heading>{val.name}</Heading>
-                  <StyledFactsBody>{val.overview.content}</StyledFactsBody>
+                  <StyledFactsBody
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    {val.overview.content}
+                  </StyledFactsBody>
                   <SourceWrapper>
                     <SourceTitle>Source:</SourceTitle>
                     <SourceLink href={val.overview.source} target="_blank">
@@ -48,7 +55,14 @@ const Content = () => {
               {content === "internal" && (
                 <StyledFactsWrapper>
                   <Heading>{val.name}</Heading>
-                  <StyledFactsBody>{val.structure.content}</StyledFactsBody>
+                  <StyledFactsBody
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    {val.structure.content}
+                  </StyledFactsBody>
                   <SourceWrapper>
                     <SourceTitle>Source:</SourceTitle>
                     <SourceLink href={val.structure.source} target="_blank">
@@ -61,7 +75,14 @@ const Content = () => {
               {content === "geology" && (
                 <StyledFactsWrapper>
                   <Heading>{val.name}</Heading>
-                  <StyledFactsBody>{val.geology.content}</StyledFactsBody>
+                  <StyledFactsBody
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    {val.geology.content}
+                  </StyledFactsBody>
                   <SourceWrapper>
                     <SourceTitle>Source:</SourceTitle>
                     <SourceLink href={val.geology.source} target="_blank">
